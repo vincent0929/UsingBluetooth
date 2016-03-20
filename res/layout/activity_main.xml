@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    tools:context="com.example.usingbluetooth.MainActivity" >
+
+    <Button
+        android:id="@+id/btnSearchBluetoothDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_shape"
+        android:text="搜索蓝牙设备" >
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6c6c6c"
+            android:text="已配对设备"
+            android:textColor="#ffffff" />
+
+        <ListView
+            android:id="@+id/lvBondedDevicesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#eeeeee"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6c6c6c"
+            android:text="可用设备"
+            android:textColor="#ffffff" />
+
+        <ListView
+            android:id="@+id/lvUnbondedDevicesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#eeeeee"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
